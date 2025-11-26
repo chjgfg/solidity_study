@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "transferSelector",
+						"type": "bytes4"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "callTransfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Function Selector.sol": "CallerContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Function Selector.sol": {
+			"keccak256": "0xb92051e1d3dbca9b8faa99aeb888bb1bde87f2904d84a0d98e98ee68af80d723",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://076c095f0e0012c8c55995fcb4223917b0e91e66830f1f1e4e79cdd435507a66",
+				"dweb:/ipfs/QmPej9KgSRNa3VgVotdrE5ou5XqVVkRXXMtX8cCtEbcncE"
+			]
+		}
+	},
+	"version": 1
+}

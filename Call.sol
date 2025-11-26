@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.10;
+
+contract Receiver {
+    event Received(address caller, uint amount, string message);
+    fallback() external payable {
+        emit Received(msg.sender, msg.value, "Fallback was called");
+    }
+    function foo(string memory _message, uint _x) public payable returns (uint) {
+        emit Received(msg.sender, msg.value, _message);
+        return _x + 1;
+    }
+}
+contract Caller {
+    event Response(bool success, bytes data);
+    function testCallFoo(address payable _addr) public payable {
+        //{value: msg.value, gas: 900000} 这个东西是带的主币和gas值
+        //这里有两个问题: 1.gas值可以不写,写的话要写大一点,怕被调用方法里不够用, 2.被调用方法的参数类型之间不能有空格
+        (bool success, bytes memory data) = _addr.call{value: msg.value, gas: 900000}(
+            abi.encodeWithSignature("foo(string,uint256)", "can shu 1", 123)
+        );
+        emit Response(success, data);
+    }
+    function testCallDoesNotExist(address _addr) public {
+        (bool success, bytes memory data) = _addr.call(abi.encodeWithSignature("doesNotExist()"));
+        emit Response(success, data);
+    }
+}

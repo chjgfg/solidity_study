@@ -20,27 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "dec",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
+				"name": "increment",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -59,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FirstApp.sol": "Counter"
+			"Interface.sol": "Counter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -73,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"FirstApp.sol": {
-			"keccak256": "0x13056196a9b11785715a899f4fd79303250d41698fae547138c9fd7037769c88",
+		"Interface.sol": {
+			"keccak256": "0xd9f25cd9d55527ddb8425d7945af97ef76a1c29ca0ab42758a91cb3ebb529805",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://92ad9aec8a4c95750b3ff6267d6e0292aeca191180af5a2bbd254ac5cde88363",
-				"dweb:/ipfs/QmUyAnVgxWD4e1Xc1QXjNz6DPBTXiPdELjH1eJY9knyeuw"
+				"bzz-raw://85cf62b3f442781ed99eb62cdc4c4413f74a13c1748ce9496f8553c3c69f06a1",
+				"dweb:/ipfs/QmXFs9CV6P8fRT2RXsXY52icCbLj84dHxoAt1waK9APZeg"
 			]
 		}
 	},
