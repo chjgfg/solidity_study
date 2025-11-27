@@ -6,33 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
-						"internalType": "bool",
-						"name": "success",
-						"type": "bool"
+						"internalType": "contract Callee",
+						"name": "_callee",
+						"type": "address"
 					},
 					{
-						"indexed": false,
-						"internalType": "bytes",
-						"name": "data",
-						"type": "bytes"
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
 					}
 				],
-				"name": "Response",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "testCallDoesNotExist",
+				"name": "setX",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -40,12 +26,35 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address payable",
+						"internalType": "address",
 						"name": "_addr",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
 					}
 				],
-				"name": "testCallFoo",
+				"name": "setXFromAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Callee",
+						"name": "_callee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setXandSendEther",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -64,7 +73,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Call.sol": "Caller"
+			"Calling Other Contract.sol": "Caller"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -78,12 +87,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Call.sol": {
-			"keccak256": "0x8188bdb88a457372f1bcf6139d55f08b7e5e306ece726cf0c32bf34db4b2ff73",
+		"Calling Other Contract.sol": {
+			"keccak256": "0x59084aa1b849f6dec30a77a9b59b4f139d67d5ca59b631d8fb255b36f1ff4b2d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1d4b5a082d397f9dcfaab7019f4fed6b3b8e0a938ff82f822bf2bbbc4b31f19a",
-				"dweb:/ipfs/QmbYS8ucWkc8roS69zN3B9iNjkNU2jTYLoXWi4YNzb6tgZ"
+				"bzz-raw://cb91fa5ea3befa56f3e89bbda898513f9181f38bb759ec588d7a57ab376b0d2f",
+				"dweb:/ipfs/QmQ96HqkDbMewT66f4meq2gR9JTXQmdmv7Ahc5BUeLynBV"
 			]
 		}
 	},
