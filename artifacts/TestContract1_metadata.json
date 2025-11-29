@@ -6,19 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "balanceOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -28,16 +22,11 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "_owner",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
 					}
 				],
-				"name": "mint",
+				"name": "setOwner",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -56,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Minimal Proxy Contract.sol": "MyToken"
+			"application_contracts/Deploy Any Contract.sol": "TestContract1"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -70,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"application_contracts/Minimal Proxy Contract.sol": {
-			"keccak256": "0x6d949005a29e8cac4a3c3fa13c3bf689639de344365b2c3cb5ee5f7360fcdfef",
+		"application_contracts/Deploy Any Contract.sol": {
+			"keccak256": "0x085007a8280c65ccc4a1446a353618dfd7b3ab4319e78ce718faf95c0fcfba55",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78e99aa5502974beb5f1e6e66355385fffd49afc677a3c1425f25dfdf9fce6f",
-				"dweb:/ipfs/QmUqFMkR9khE1bFpBRLxTZMNw7tgEbi4rghAusppQSsadZ"
+				"bzz-raw://9d4bd3d8eafc5cfc000a53b517b43d1be2162f60214b97ef1a725330feae178c",
+				"dweb:/ipfs/QmUdQrkHtur3SMAERbMyRpuiXMTivBm5tftLB3SWgfEi9S"
 			]
 		}
 	},

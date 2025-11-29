@@ -9,36 +9,18 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "target",
 						"type": "address"
 					}
 				],
-				"name": "balanceOf",
+				"name": "clone",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "address",
-						"name": "to",
+						"name": "result",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
 					}
 				],
-				"name": "mint",
-				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -56,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Minimal Proxy Contract.sol": "MyToken"
+			"application_contracts/Minimal Proxy Contract.sol": "MinimalProxy"
 		},
 		"evmVersion": "prague",
 		"libraries": {},

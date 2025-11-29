@@ -6,14 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balanceOf",
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -25,22 +24,34 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "mint",
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -56,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Minimal Proxy Contract.sol": "MyToken"
+			"application_contracts/Ether Wallet.sol": "EtherWallet"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -70,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"application_contracts/Minimal Proxy Contract.sol": {
-			"keccak256": "0x6d949005a29e8cac4a3c3fa13c3bf689639de344365b2c3cb5ee5f7360fcdfef",
+		"application_contracts/Ether Wallet.sol": {
+			"keccak256": "0xe632a97b3d99942bb75980e937bf5371e136be9291b7c6f512d7ea7c8e8a53d6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78e99aa5502974beb5f1e6e66355385fffd49afc677a3c1425f25dfdf9fce6f",
-				"dweb:/ipfs/QmUqFMkR9khE1bFpBRLxTZMNw7tgEbi4rghAusppQSsadZ"
+				"bzz-raw://00f2a752b5a2ea7e09da3260e414bb01d3e72325765c507465c20f75da10eefd",
+				"dweb:/ipfs/QmbQ6hiC93UepntVXiP6vbZPD8g5JYTqGxzxV14tsHKppp"
 			]
 		}
 	},

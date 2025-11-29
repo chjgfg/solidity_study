@@ -9,36 +9,33 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "operator",
 						"type": "address"
-					}
-				],
-				"name": "balanceOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "tokenId",
 						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
 					}
 				],
-				"name": "mint",
-				"outputs": [],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -56,7 +53,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Minimal Proxy Contract.sol": "MyToken"
+			"application_contracts/NFT.sol": "IERC721Receiver"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -70,12 +67,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"application_contracts/Minimal Proxy Contract.sol": {
-			"keccak256": "0x6d949005a29e8cac4a3c3fa13c3bf689639de344365b2c3cb5ee5f7360fcdfef",
+		"application_contracts/NFT.sol": {
+			"keccak256": "0xd56e80c6c12f34375179e64e4898965b4bb0359207ba81f40a231df3c07dcc43",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78e99aa5502974beb5f1e6e66355385fffd49afc677a3c1425f25dfdf9fce6f",
-				"dweb:/ipfs/QmUqFMkR9khE1bFpBRLxTZMNw7tgEbi4rghAusppQSsadZ"
+				"bzz-raw://eb88dee64f10a9c7a4a1a45e6792b583d4c56f564f1377a770397df0bf219c07",
+				"dweb:/ipfs/Qmd3AbHaHAnkVUUMCGCWiGLJr4WEkD4RbLZfraBKt3LfSo"
 			]
 		}
 	},

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"application_contracts/NFT.sol": "Address"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"application_contracts/NFT.sol": {
+			"keccak256": "0xd56e80c6c12f34375179e64e4898965b4bb0359207ba81f40a231df3c07dcc43",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eb88dee64f10a9c7a4a1a45e6792b583d4c56f564f1377a770397df0bf219c07",
+				"dweb:/ipfs/Qmd3AbHaHAnkVUUMCGCWiGLJr4WEkD4RbLZfraBKt3LfSo"
+			]
+		}
+	},
+	"version": 1
+}

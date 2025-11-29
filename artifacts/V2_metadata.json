@@ -6,14 +6,35 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "dec",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "balanceOf",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "inc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -22,24 +43,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -56,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Minimal Proxy Contract.sol": "MyToken"
+			"application_contracts/Upgradeable Proxy.sol": "V2"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -70,12 +73,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"application_contracts/Minimal Proxy Contract.sol": {
-			"keccak256": "0x6d949005a29e8cac4a3c3fa13c3bf689639de344365b2c3cb5ee5f7360fcdfef",
+		"application_contracts/Upgradeable Proxy.sol": {
+			"keccak256": "0x27616fe4118710c42576db92490accadcbab20a976cb303cd509573956df8352",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78e99aa5502974beb5f1e6e66355385fffd49afc677a3c1425f25dfdf9fce6f",
-				"dweb:/ipfs/QmUqFMkR9khE1bFpBRLxTZMNw7tgEbi4rghAusppQSsadZ"
+				"bzz-raw://f17a31af3c2bad1ff5944984ff72fa07f857d301688f6b79e1eb9c5edf27b1ce",
+				"dweb:/ipfs/QmZGVzyVtTrVaRWyzocBXWdWBkWNBUqWsCptKKE97QDKfR"
 			]
 		}
 	},

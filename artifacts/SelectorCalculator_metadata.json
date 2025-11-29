@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "functionSignature",
+						"type": "string"
+					}
+				],
+				"name": "getSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"application_contracts/Upgradeable Proxy.sol": "SelectorCalculator"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"application_contracts/Upgradeable Proxy.sol": {
+			"keccak256": "0x27616fe4118710c42576db92490accadcbab20a976cb303cd509573956df8352",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f17a31af3c2bad1ff5944984ff72fa07f857d301688f6b79e1eb9c5edf27b1ce",
+				"dweb:/ipfs/QmZGVzyVtTrVaRWyzocBXWdWBkWNBUqWsCptKKE97QDKfR"
+			]
+		}
+	},
+	"version": 1
+}

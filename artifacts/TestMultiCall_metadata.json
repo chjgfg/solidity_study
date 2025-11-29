@@ -8,12 +8,31 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
 					}
 				],
-				"name": "balanceOf",
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "test",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -21,25 +40,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -56,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Minimal Proxy Contract.sol": "MyToken"
+			"application_contracts/Multi Call.sol": "TestMultiCall"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -70,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"application_contracts/Minimal Proxy Contract.sol": {
-			"keccak256": "0x6d949005a29e8cac4a3c3fa13c3bf689639de344365b2c3cb5ee5f7360fcdfef",
+		"application_contracts/Multi Call.sol": {
+			"keccak256": "0xac0ccf77b15066faaa205787a23be22494346780d3f1980c99eb186efbe953ff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78e99aa5502974beb5f1e6e66355385fffd49afc677a3c1425f25dfdf9fce6f",
-				"dweb:/ipfs/QmUqFMkR9khE1bFpBRLxTZMNw7tgEbi4rghAusppQSsadZ"
+				"bzz-raw://a47e814b90e0848e906954ab3c967b2d4f9903fafd42f51cb83b8b67868fb884",
+				"dweb:/ipfs/QmbaJ2uYukft6qtwtUmv6WvTRFZeFhMMJsnqEQJs7Qt8nK"
 			]
 		}
 	},
