@@ -38,9 +38,14 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -72,11 +77,11 @@
 	},
 	"sources": {
 		"application_contracts/Multi Call.sol": {
-			"keccak256": "0xac0ccf77b15066faaa205787a23be22494346780d3f1980c99eb186efbe953ff",
+			"keccak256": "0x5f3260c1dea2b771f9d62372158dec120305dac147b0dda9931d3d03894a4cae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a47e814b90e0848e906954ab3c967b2d4f9903fafd42f51cb83b8b67868fb884",
-				"dweb:/ipfs/QmbaJ2uYukft6qtwtUmv6WvTRFZeFhMMJsnqEQJs7Qt8nK"
+				"bzz-raw://40d63d6e4db7a3d7c6f6b54b4e59c82badf199fc38ad1ed15a70bb8a1e2bb5d8",
+				"dweb:/ipfs/QmaCuGQFvqC9KDaaev6FsM1bk1Cvw4H8taupSoqKNF1ryk"
 			]
 		}
 	},

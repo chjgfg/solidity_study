@@ -8,22 +8,24 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address[]",
-						"name": "targets",
-						"type": "address[]"
-					},
-					{
-						"internalType": "bytes[]",
-						"name": "data",
-						"type": "bytes[]"
+						"internalType": "uint256[]",
+						"name": "nums",
+						"type": "uint256[]"
 					}
 				],
-				"name": "multiCall",
+				"name": "sumIfEvenAndLessThan99",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "total",
 				"outputs": [
 					{
-						"internalType": "bytes[]",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bytes[]"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -43,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"application_contracts/Multi Call.sol": "MultiCall"
+			"application_contracts/Gas.sol": "Gas1"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -57,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"application_contracts/Multi Call.sol": {
-			"keccak256": "0x5f3260c1dea2b771f9d62372158dec120305dac147b0dda9931d3d03894a4cae",
+		"application_contracts/Gas.sol": {
+			"keccak256": "0xe76f772a0e05fd04a5b424043affe04f8d2c9b7ca28383b0af21d7ff71743c56",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://40d63d6e4db7a3d7c6f6b54b4e59c82badf199fc38ad1ed15a70bb8a1e2bb5d8",
-				"dweb:/ipfs/QmaCuGQFvqC9KDaaev6FsM1bk1Cvw4H8taupSoqKNF1ryk"
+				"bzz-raw://88842ff6355c0632e94e7326f7e394290a70009a430225d4cef0d01374c4403e",
+				"dweb:/ipfs/QmQMVLEuTmb4DPZr8Bm6HnyDocg7q1HmcJmZM8pcj6mLES"
 			]
 		}
 	},
